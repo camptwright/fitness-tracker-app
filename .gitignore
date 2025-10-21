@@ -1,0 +1,31 @@
+# Node & build artifacts
+node_modules/
+dist/
+.build/
+.vite/
+.cache/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+vite-debug.log*
+logs/
+*.log
+
+# Env files (keep the example)
+.env
+.env.*
+!.env.example
+!.env.sample
+# if you previously used a custom filename:
+supabase.env
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/

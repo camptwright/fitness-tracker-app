@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  background: theme("colors.base.bg");
+  color: theme("colors.base.text");
+}
+.card {
+  @apply bg-base-card border border-base-border rounded-2xl shadow;
+}
+.btn {
+  @apply inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 transition border border-base-border;
+}
+.input {
+  @apply w-full bg-base-bg border border-base-border rounded-xl px-3 py-2 outline-none;
+}
+.select {
+  @apply input;
+}
+.table th,
+.table td {
+  @apply py-2 pr-4;
+}
