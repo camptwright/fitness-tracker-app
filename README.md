@@ -4,7 +4,7 @@ Local-first React + TypeScript app to **log workouts (per-exercise sets), track 
 
 ---
 
-## ✨ Features
+## Features
 
 - **Workouts**
   - Per-exercise **sets** (weight × reps), notes, duration, day/type (Push/Pull/Legs/Run, etc.)
@@ -31,7 +31,7 @@ Local-first React + TypeScript app to **log workouts (per-exercise sets), track 
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 - **Frontend:** React 18, TypeScript, Vite, TailwindCSS, Recharts, Framer Motion, Lucide
 - **State & Storage:** local component state + `localStorage`
@@ -40,7 +40,7 @@ Local-first React + TypeScript app to **log workouts (per-exercise sets), track 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 fitness-tracker-pro/
@@ -85,7 +85,7 @@ fitness-tracker-pro/
 
 ---
 
-## 🚀 Getting Started (Local Node)
+## Getting Started (Local Node)
 
 ### 0) Requirements
 - **Node.js 20+** (same as Dockerfile)
@@ -122,7 +122,7 @@ Open http://localhost:5173
 
 ---
 
-## 🐳 Run with Docker
+## Run with Docker
 
 ```bash
 docker compose up --build
@@ -145,7 +145,7 @@ npm run preview    # preview built app on a local server
 
 ---
 
-## 🔐 Environment Variables (Vite)
+## Environment Variables (Vite)
 
 | Key                       | Description                          | Example                   |
 |---------------------------|--------------------------------------|---------------------------|
@@ -161,7 +161,7 @@ npm run preview    # preview built app on a local server
 
 ---
 
-## 🗃️ CSV Import/Export
+## CSV Import/Export
 
 ### Export
 - **Workouts:** “Export CSV” on Workouts tab  
@@ -242,7 +242,7 @@ create table if not exists public.waters (
 
 ---
 
-## 🧠 Data Model (TypeScript)
+## Data Model (TypeScript)
 
 ```ts
 type SetEntry = { weight: number; reps: number };
@@ -265,7 +265,7 @@ type Targets = { calories: number; protein: number; carbs: number; fat: number; 
 
 ---
 
-## 🎯 Customization Tips
+## Customization Tips
 
 - **Add workout templates:** edit `src/components/forms/WorkoutForm.tsx` (`TEMPLATES`).
 - **Units (kg/lb):** store a `unit` in settings and convert display/entry.
@@ -274,7 +274,7 @@ type Targets = { calories: number; protein: number; carbs: number; fat: number; 
 
 ---
 
-## 🧪 Troubleshooting
+## Troubleshooting
 
 **`Cannot find module '@vitejs/plugin-react'`**  
 Install the plugin and restart:
@@ -308,7 +308,7 @@ Vite only loads `.env`, `.env.local`, or `.env.<mode>`. If you use `.env.supabas
 
 ---
 
-## 🔒 .gitignore
+## .gitignore
 
 Make sure the repo has a `.gitignore` that ignores real env files but keeps examples:
 
@@ -326,7 +326,7 @@ dist/
 
 ---
 
-## 🗺️ Roadmap (ideas)
+## Roadmap (ideas)
 
 - Exercise PR tracking (best set per lift)
 - Weekly/monthly goals and streak badges
